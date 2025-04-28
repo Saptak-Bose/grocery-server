@@ -34,7 +34,7 @@ export const authenticate = async (email, password) => {
 
     if (!user) return null;
 
-    if (user.password === password) return Promise.resolve(email, password);
+    if (user.password === password) return user;
     else return null;
   }
 
