@@ -13,4 +13,4 @@ jobs:
     steps:
       - name: Curl Render URL
         run: |
-          curl -fsS https://grocery-server-i29t.onrender.com/ || true
+          curl -fsS https://grocery-server-i29t.onrender.com/api/categories || true
